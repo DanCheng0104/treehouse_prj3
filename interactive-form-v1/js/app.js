@@ -85,7 +85,7 @@ $('#design').trigger('change');
 
     //validate form when user submit the form
     $('form').on('submit',(event)=>{
-    	event.preventDefault();
+
     	//check if the name is empty or not
     	function nameCheck(){
     		if ($('#name').val()==="") {
@@ -140,7 +140,9 @@ $('#design').trigger('change');
 			alertHtml = '<div id="alert" style="color:red">' + errMsg +'<div>';
 			$('form').prepend(alertHtml);
 			$('body').scrollTop(0);
+            event.preventDefault();
 		}    
+
 
     });
     	

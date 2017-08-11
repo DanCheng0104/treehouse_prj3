@@ -132,7 +132,7 @@ $('#design').trigger('change');
         if ($("#payment").val() === 'credit card'){
         	let cvvCheck = /^([0-9]{3})$/;
         	let ccCheck = /^([0-9]{13}|[0-9]{14}|[0-9]{15}|[0-9]{16})$/;
-        	if (!checkNumbers('#cc-num',ccCheck)) {errMsg+='<p>Please provide 3 digit cvv number;</p>'}
+        	if (!checkNumbers('#cc-num',ccCheck)) {errMsg+='<p>Please provide a valid credit card number;</p>'}
         	if (!checkNumbers('#cvv',cvvCheck)) {errMsg+='<p>Please provide 3 digit cvv number;</p>'}
         	if (!checkNumbers('#zip',zipCheck)) {errMsg+='<p>Please provide 5 digit zip number;</p>'} 
 	    }      
